@@ -1,0 +1,34 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="diwal.css" rel="stylesheet" type="text/css" />
+  <script>
+    function openwish() {
+    if (document.getElementById('name').value == "") {
+        alert("Please Enter Your Name!!");
+    } else {
+        // document.getElementById('cont').style.display = "none";
+        document.body.style.background = "url('https://media0.giphy.com/media/Sq3tXvzzp51Ic/giphy.gif?cid=ecf05e47c3dds9bsqwd08n8z3mpgjqsc0nnc7nv25z7062op&ep=v1_gifs_search&rid=giphy.gif&ct=g') no-repeat center center/cover";
+        document.getElementById('cont').innerHTML = `<h1 style="color:white; font-size:50px; margin:0;">Happy Diwali</h1>
+        <h1 style="color:white; font-size:50px; margin:0;">${document.getElementById('name').value}</h1><h1 style="color:white; font-size:50px; margin:0;">Bhai</h1>
+        <p style="color:white; margin:5px;">From Mohan Sai</p>`;
+    }
+}
+
+  </script>
+</head>
+<body class="flex">
+  <div class="container flex" id="cont">
+    <h1>Enter Your Name</h1>
+    <input type="text" id="name" name="name">
+    <button id="btn" onclick=openwish()>Click Here</button>
+  </div>
+
+  <!-- <script src="diwali.js.js"></script> -->
+
+</body>
+
+</html>
